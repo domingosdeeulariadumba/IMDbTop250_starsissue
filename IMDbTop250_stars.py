@@ -31,7 +31,7 @@ warnings.filterwarnings('ignore')
     Importing the saved dataset extracted from the IMDb website in the previous
     project(IMDb Top 100 Analysis).
     '''
-df_IMDb = pd.read_csv('C:/Users/domingosdeeularia/Documents/notyourbusiness/CodingAndAnalytics/Projects/IMDbTop250/IMDbTop250_dataset.csv')
+df_IMDb = pd.read_csv('IMDbTop250_dataset.csv')
 
     '''
     We'll next apply feature engineering to extract the title, rating and 
@@ -72,7 +72,7 @@ IMDb250_title = pd.DataFrame({'title': title})
     stores information of countries, directors, stars and the main financial
     details of the movies.
    '''
-IMDb250_DB = pd.read_excel('C:/Users/domingosdeeularia/Documents/notyourbusiness/CodingAndAnalytics/Projects/IMDbTop250/IMDbTop250_DB.xlsx')
+IMDb250_DB = pd.read_excel('IMDbTop250_DB.xlsx')
 
 
     '''
@@ -185,7 +185,7 @@ IMDb_250.insert(6, '2nd_costar',stars_splitted[2])
      '''
      Saving the updated dataset
      '''
-IMDb_250.to_csv('C:/Users/domingosdeeularia/Documents/notyourbusiness/CodingAndAnalytics/Projects//IMDbTop250/IMDb250_stars.csv')
+IMDb_250.to_csv('IMDb250_stars.csv')
 
     '''
     Let's check the most frequent collaborations between directors and stars
