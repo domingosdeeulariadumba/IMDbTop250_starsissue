@@ -18,6 +18,7 @@ import itertools
 from collections import Counter
 from sklearn.feature_selection import RFE
 import statsmodels.api as sm
+from xgboost import XGBRegressor as xgb
 import warnings
 warnings.filterwarnings('ignore')
 # %%
